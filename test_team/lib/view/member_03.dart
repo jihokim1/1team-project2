@@ -134,12 +134,26 @@ class Member03 extends StatelessWidget {
               )
             ],
           ),
+          Row(
+            children: [
+              SizedBox(
+                height: 50,
+              ),
+              Icon(Icons.question_mark),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
+                child: Text("궁금한 위스키: Lagavulin"),
+              )
+            ],
+          ),
           Column(
             children: [
               SizedBox(
                 height: 50,
               ),
+
             ],
+            
           ),
           Center(
             child:
@@ -150,7 +164,6 @@ class Member03 extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
                 foregroundColor: Colors.white,
-                fontWeight: FontWeight.bold,
               ),
               child: Text('홈으로 이동',
                 
