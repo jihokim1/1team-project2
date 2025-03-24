@@ -19,46 +19,58 @@ class Member01 extends StatelessWidget {
           children: [
             Center(
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.fromLTRB(0,0,0,40),
                 child: CircleAvatar(
                   backgroundImage: AssetImage(
-                    'images/Lee.jpg',
+                    'images/san.jpeg',
                   ),
-                  radius: 70,
+                  radius: 90,
                 ),
               ),
             ),
-              Divider(
-              color: Colors.grey,
-              thickness:1,
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0,0,0,20),
+                child: Divider(
+                color: Colors.grey,
+                thickness:1,
+                ),
               ),
-          Text(
-            '이름',
-            style: TextStyle(
-              color: Colors.black,
-            ),
-            ),
-          Text(
-            '본인 성함 작성',
-            style: TextStyle(
-              color: Colors.black,
-              fontSize: 25,
-              fontWeight: FontWeight.bold
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0,0,0,5),
+            child: Text(
+              '이름',
+              style: TextStyle(
+                color: Colors.black,
+              ),
+              ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0,0,0,5),
+            child: Text(
+              '정서윤',
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 20,
+                fontWeight: FontWeight.bold
+              ),
             ),
           ),
-          Text(
-            '성별 / 나이(년생)',
-            style: TextStyle( 
-              color: Colors.black
-            ),
-            ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 0, 0, 5),
+            child: Text(
+              '성별 / 나이(년생)',
+              style: TextStyle( 
+                color: Colors.black
+              ),
+              ),
+          ),
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 0, 0, 8),
             child: Text(
-              '본인 성별 및 년생 작성',
+              '여 / 2003년생',
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 25,
+                fontSize: 20,
                 fontWeight: FontWeight.bold
               ),
               ),
@@ -68,7 +80,7 @@ class Member01 extends StatelessWidget {
               Icon(Icons.check_circle_outline),
               Padding(
                 padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
-                child: Text("특징1"),
+                child: Text("강아지"),
               )
             ],
           ),
@@ -77,7 +89,7 @@ class Member01 extends StatelessWidget {
               Icon(Icons.check_circle_outline),
               Padding(
                 padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
-                child: Text("특징2"),
+                child: Text("여행"),
               )
             ],
           ),
@@ -86,7 +98,7 @@ class Member01 extends StatelessWidget {
               Icon(Icons.check_circle_outline),
               Padding(
                 padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
-                child: Text("특징3"),
+                child: Text("ESTP"),
               )
             ],
           ),
@@ -95,20 +107,33 @@ class Member01 extends StatelessWidget {
               Icon(Icons.check_circle_outline),
               Padding(
                 padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
-                child: Text("특징4"),
+                child: Text("B"),
               )
             ],
           ),
           Center(
             child:
-            ElevatedButton(
-              onPressed: () {
-              Navigator.pop(context);
-              },
-              child: Text('Go to First page')),
+            Padding(
+              padding: const EdgeInsets.all(50.0),
+              child: ElevatedButton.icon(
+                onPressed: () { 
+                Navigator.pop(context);
+                },
+                      style: ElevatedButton.styleFrom(
+                  foregroundColor: const Color.fromARGB(255, 255, 255, 255),
+                  backgroundColor: const Color.fromARGB(255, 164, 164, 164),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(0),
+                  ),
+                ),
+                icon: Icon(
+                  Icons.home,
+                color: Colors.white,
+                ),
+                label:Text('Go to Home')),
+            ),
           ),
           ],
-        
         ),
       )
     );

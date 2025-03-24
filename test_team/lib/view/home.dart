@@ -9,26 +9,27 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('Team'),
       ),body: Center(
-        child: Column( children: [
+        child: Column(
+           children: [
           ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, '/1st'), 
-              child: Text('Go to the Screen #1'),
+              child: Text('정서윤'),
               ),
             ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, '/2nd'), 
-              child: Text('Go to the Screen #2'),
+              child: Text('김상범'),
               ),
             ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, '/3rd'), 
-              child: Text('Go to the Screen #2'),
+              child: Text('정도영'),
               ),
             ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, '/4th'), 
-              child: Text('Go to the Screen #2'),
+              child: Text('김지호'),
               ),
             ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, '/5th'), 
-              child: Text('Go to the Screen #2'),
+              child: Text('박진표'),
               ),
         ]
         ),
