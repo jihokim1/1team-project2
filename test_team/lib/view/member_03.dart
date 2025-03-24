@@ -143,7 +143,16 @@ class Member03 extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
                 child: Text("궁금한 위스키: Lagavulin"),
-              )
+              ),
+              SizedBox(
+                width: 60,
+              ),
+              CircleAvatar(
+                backgroundImage: AssetImage(
+                  'images/Lagavulin.jpg'
+                ),
+                radius: 50,
+              ),
             ],
           ),
           Column(
