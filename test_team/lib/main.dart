@@ -24,10 +24,10 @@ class MyApp extends StatelessWidget {
       routes: {
         '/' : (context) => Home(),
         '/1st' : (context) => Member01(),
-        '/2st' : (context) => Member02(),
-        '/3st' : (context) => Member03(),
-        '/4st' : (context) => Member04(),
-        '/5st' : (context) => Member05(),
+        '/2nd' : (context) => Member02(),
+        '/3rd' : (context) => Member03(),
+        '/4th' : (context) => Member04(),
+        '/5th' : (context) => Member05(),
       },    );
   }
 }
